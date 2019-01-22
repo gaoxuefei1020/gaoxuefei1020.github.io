@@ -2,10 +2,7 @@
 
 $(function(){
 
-    GC.w = document.documentElement.clientWidth;
-    GC.h = document.documentElement.clientHeight;
-    $('.page').css({width:GC.w,height:GC.h});
-    $('.page1 .content').css({width:GC.w,height:GC.h});
+    
 
 
 /************window.resize*********************************************************************/
@@ -654,4 +651,10 @@ var minu = 0, sec = 0,voiceTime,isCanAnswer = false,isHangup = false;
     $('.page10 .cover').click(function() {
         $('.page10 .cover').hide();
     });
+
+
+    GC.w = document.documentElement.clientWidth;
+    GC.h = document.documentElement.clientHeight;
+    $('.page').css({width:GC.w,height:GC.h});
+    $('.page1 .content').css({width:GC.w,height:GC.h});
 });
