@@ -123,27 +123,27 @@ var Loader = function(){
 			}
 		})
 	};
-	// this.success = function(){
-	// 	//console.log("加载完毕");
+	this.success = function(){
+		//console.log("加载完毕");
 
 		
-	// 	$('.page').css({width:GC.w,height:GC.h});
-	// 	$('.page1 .content').css({width:GC.w,height:GC.h});
+		$('.page').css({width:GC.w,height:GC.h});
+		$('.page1 .content').css({width:GC.w,height:GC.h});
 
-	// 	$('.loading').addClass('hidden');
-	// 	$('.page1').removeClass('hidden');
+		$('.loading').addClass('hidden');
+		$('.page1').removeClass('hidden');
 
-	// 	//init.initDate();  // 设置时间
+		//init.initDate();  // 设置时间
 
-	// 	//alert("xx");
+		//alert("xx");
 
-	// 	page1Play();  // 播放音乐
+		page1Play();  // 播放音乐
 
-	// 	// $('.page5').removeClass('hidden');
-	// 	// $('.page5 .message').removeClass('hidden');
-	// 	// $('.page5 .messBG').addClass('person').removeClass('hidden');
-	// 	// init.nextAnimate();
-	// };
+		// $('.page5').removeClass('hidden');
+		// $('.page5 .message').removeClass('hidden');
+		// $('.page5 .messBG').addClass('person').removeClass('hidden');
+		// init.nextAnimate();
+	};
 	this.loadLoading = function(imgArray,obj){
 		var img = new Image();
 		img.onload = function(){

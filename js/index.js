@@ -78,6 +78,11 @@ $(function(){
     pageSwipe.addEventListener('touchend',function(){
         //alert(init.isCanMove);
         if( isTouchmove ){
+            GC.w = document.documentElement.clientWidth;
+            GC.h = document.documentElement.clientHeight;
+            $('.page').css({width:GC.w,height:GC.h});
+            $('.page1 .content').css({width:GC.w,height:GC.h});
+
             if( 1 ){
                 clearTimeout(timeout);
                 //if( $('.page1 .unlock')[0].readyState == 4 ){
