@@ -114,6 +114,10 @@ var Loader = function(){
 		//console.log("加载完毕");
 		$('.page').css({width:GC.w,height:GC.h});
 		$('.page1 .content').css({width:GC.w,height:GC.h});
+		$('.page').css({width:GC.w,height:GC.h});
+		$('.page1 .content').css({width:GC.w,height:GC.h});
+		$('.page').css({width:GC.w,height:GC.h});
+		$('.page1 .content').css({width:GC.w,height:GC.h});
 		$('.loading').addClass('hidden');
 		$('.page1').removeClass('hidden');
 
