@@ -2,6 +2,11 @@
 
 $(function(){
 
+    GC.w = document.documentElement.clientWidth;
+    GC.h = document.documentElement.clientHeight;
+    $('.page').css({width:GC.w,height:GC.h});
+    $('.page1 .content').css({width:GC.w,height:GC.h});
+
 
 /************window.resize*********************************************************************/
     $(window).resize(function(){
