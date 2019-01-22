@@ -155,7 +155,7 @@ var Loader = function(){
 		img.src = ctx + "/template/1024/" + imgArray[0];
 	};
 };
-//window.onload = function(){
+window.onload = function(){
 	var loader = new Loader();
 	loader.loadLoading(imgArray,loader);
-//};
+};
