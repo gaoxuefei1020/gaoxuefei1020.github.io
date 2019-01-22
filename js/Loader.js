@@ -112,12 +112,14 @@ var Loader = function(){
 	};
 	this.success = function(){
 		//console.log("加载完毕");
+
+		var GC = {
+            w:document.documentElement.clientWidth,
+            h:document.documentElement.clientHeight
+        };
 		$('.page').css({width:GC.w,height:GC.h});
 		$('.page1 .content').css({width:GC.w,height:GC.h});
-		$('.page').css({width:GC.w,height:GC.h});
-		$('.page1 .content').css({width:GC.w,height:GC.h});
-		$('.page').css({width:GC.w,height:GC.h});
-		$('.page1 .content').css({width:GC.w,height:GC.h});
+
 		$('.loading').addClass('hidden');
 		$('.page1').removeClass('hidden');
 
